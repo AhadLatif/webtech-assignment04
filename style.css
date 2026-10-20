@@ -1,0 +1,115 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fcfcfc;
+  color: #f9f7f7;
+}
+
+.hidden {
+  display: none;
+}
+
+
+button {
+  padding: 8px 14px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 4px;
+  background: #3498db;
+  color: white;
+
+  font-size: 14px;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+.main {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.left, .right {
+  width: 50%;
+}
+
+#editor {
+  width: 100%;
+  height: 400px;
+  font-family: monospace; 
+  font-size: 15px;
+  padding: 10px;
+}
+
+.hint {
+  font-size: 13px;
+  color: #fffcfc;
+}
+
+.slide {
+  background: white;
+  height: 400px;
+  padding: 30px;
+  border: 1px solid #faf8f8;
+}
+
+.slide h1 {
+  color: #ffffff;
+  margin-top: 0;
+}
+
+.slide h2 {
+  color: #3498db;
+}
+
+.slide code {
+  background: #eee;
+  padding: 2px 5px;
+}
+
+.controls {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.count {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+#message {
+  text-align: center;
+  color: green;
+  height: 20px;
+}
+
+#presentScreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #2a2929;
+  padding: 20px;
+}
+
+#presentScreen .count {
+  color: white;
+}
+
+.slide.big {
+  height: 80vh;
+  font-size: 24px;
+  padding: 50px;
+}
+
+

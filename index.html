@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Markdown Slides</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="editorScreen">
+    <div class="topbar">
+      <h2>Markdown Slides</h2>
+      <div>
+        <button id="newBtn">New</button>
+        <button id="saveBtn">save</button>
+        <button id="presentBtn">Present</button>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="left">
+        <h3>Markdown</h3>
+        <textarea id="editor"></textarea>
+        <p class="hint">Use --- on its own line to start a new slide. Ctr+s to save</p>
+      </div>
+
+      <div class="right">
+        <h3>Preview</h3>
+        <div id="previewSlide" class="slide"></div>
+        <div class="controls">
+          <button id="prevBtn"> Left</button>
+          <button id="nextBtn">Right </button>
+          <button id="fullBtn">Full Screen</button>
+        </div>
+        <p id="previewCount" class="count"></p>
+      </div>
+    </div>
+
+    <p id="message"></p>
+  </div>
+
+  <div id="presentScreen" class="hidden">
+    <div id="presentSlide" class="slide big"></div>
+    <div class="controls">
+      <button id="prevBtn2"> Left</button>
+      <button id="nextBtn2">Right </button>
+      <button id="fullBtn2">Ext Full Screen</button>
+    </div>
+    <p id="presentCount" class="count"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
